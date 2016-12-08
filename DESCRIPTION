@@ -1,0 +1,21 @@
+Package: PofOAssignment
+Type: Package
+Title: Assigns parent of origion to each site in each offspring using family
+    Trio or Duo phased genotypes.
+Version: 1.0
+Date: 2016-05-15
+Author: Bharati Jadhav
+Maintainer: Bharati Jadhav <bharati.jadhav@mssm.edu>
+Description: It has three major steps. 1) zero-out the sites in family with
+    Mendelian error 2) use sliding window algorithm to detect and fix phase switch
+    error 3) retrieve the genotype at het sites in offspring which were set to
+    missing in sliding window and assign PofO using simple Mendelian Inheritance
+    Rule
+Depends:
+    R(>= 3.0)
+Imports:
+    doParallel
+VignetteBuilder: knitr
+NeedsCompilation: no
+License: Open-source
+RoxygenNote: 5.0.1
